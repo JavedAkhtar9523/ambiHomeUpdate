@@ -1,0 +1,174 @@
+/* General Reset and Utility */
+body, h1, h2, h3, h4, p, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home Hero Section */
+.home-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.home-background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.home-hero-content {
+  position: relative;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.home-hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.home-hero-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.home-primary-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #0078D7;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.home-primary-btn:hover {
+  background: #0053a6;
+}
+
+.home-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.home-explore-tech-icon {
+  margin-left: 8px;
+}
+
+/* Spread Services Section */
+.spread-container {
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+.spread-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.spread-network-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.spread-section-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.spread-section-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.network-learn-more-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0078D7;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.network-learn-more-link:hover {
+  color: #0053a6;
+}
+
+/* Service Cards */
+.service-card {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.icon-wrapper {
+  font-size: 2rem;
+  color: #0078D7;
+}
+
+.spead-ser-head-text {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.spead-ser-subtitle-text {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Maximize Section */
+.home-body-section {
+  padding: 40px;
+}
+
+.maximize-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.maximize-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.maximize-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.maximize-content-right {
+  padding: 20px;
+}
+
