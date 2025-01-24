@@ -25,6 +25,7 @@ import AISolutions from "./AISolutions";
 import ServicesSection from "./ServiceSection";
 import NewsCarousel from "./NewsCarousel";
 import HomeUpdateSecond from "./HomeUpdateSecond";
+import NetworkSection from "./NetworkSection";
 // import HomeSection from "./NetworkSection";
 // import NewsCarousel from "./NewCarousel";
 
@@ -206,8 +207,9 @@ const HeroSection = ({ mousePosition }) => {
         </section>
 
         {/* ---------------------------------------------- */}
-        <HomeUpdateSecond />
+        {/* <HomeUpdateSecond /> */}
         {/* <HomeSection /> */}
+        <NetworkSection />
         <AISolutions />
         <ServicesSection />
 

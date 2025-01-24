@@ -1,4 +1,3 @@
-// import "./HomeSection.css";
 // import React, { useRef, useEffect, useState } from "react";
 // import ambiup from "../../images/ambiup.mp4";
 // import officediscussingImg from "../../assets/office-discussing.avif";
@@ -165,3 +164,142 @@
 //     </div>
 //   );
 // }
+
+import React from "react";
+import "./HomeSection.css";
+import { Link } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { HiMiniUserGroup } from "react-icons/hi2";
+import { RiShareForwardFill } from "react-icons/ri";
+import { MdLeaderboard } from "react-icons/md";
+
+import officediscussingImg from "../../assets/office-discussing.avif";
+import empowerImg1 from "../../assets/empowerImg1.jpg";
+import learnImg from "../../assets/learn.jpg";
+import connectedImg from "../../assets/connect.avif";
+import maximize from "../../assets/maximize.jpg";
+
+export default function NetworkSection() {
+  const spreadsServices = [
+    {
+      src: empowerImg1,
+      Icon: <HiMiniUserGroup />,
+      alt: "Image 2",
+      text: "Emphasizes the importance of accessing valuable resources and support through a strong network and follow your passion with following your choices.",
+      headText: "Empower your life",
+    },
+    {
+      src: learnImg,
+      alt: "Image 3",
+      Icon: <MdLeaderboard />,
+      headText: "Learn new skills",
+      text: "Learning is an endless process, and it's impact is infinite. Never stop learning and together, let's reach new heights expand your network",
+    },
+    {
+      src: connectedImg,
+      alt: "Image 4",
+      Icon: <RiShareForwardFill />,
+      headText: "Connect, Capture And Share",
+      text: "Connect with the world at your fingertips. Think, express and share your ideas with the globe. Spread your wings and soar to new heights feel connection here!",
+    },
+  ];
+
+  return (
+    <div className="home-container">
+      <div className="spread-container">
+        <div className="spread-top">
+          <div className="spread-network-img-container">
+            <img
+              src={officediscussingImg}
+              className="spread-network-img"
+              alt="Office Discussion"
+            />
+          </div>
+          <div className="spread-content-right">
+            <h2 className="section-title">
+              Spread Your Wings, Expand Your Network
+            </h2>
+            <p className="section-description">
+              Expand your reach and influence. Grow your connections, increase
+              your opportunities, and access to resources. Make a bond with new
+              possibilities and horizons.
+            </p>
+            <Link to="/product" className="learn-more-link">
+              Learn More <FaLongArrowAltRight className="arrow-icon" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="services-container">
+          <div className="services-header">
+            <div className="services-title-col">
+              <h3
+                className="services-main-title"
+                style={{ color: "darkslateblue", fontWeight: "500" }}
+              >
+                Connect Learn Grow <br />
+                Your premier destination for professional growth and networking
+              </h3>
+            </div>
+            <div className="services-subtitle-col">
+              <p
+                className="services-subtitle"
+                style={{ color: "darkslateblue" }}
+              >
+                Implies that a stronger network can provide valuable support and
+                tools highlights the potential for new experiences and
+                possibilities
+              </p>
+            </div>
+          </div>
+
+          <div className="services-grid">
+            {spreadsServices.map((data, index) => (
+              <div key={index} className="service-card2">
+                <div className="service-icon">{data.Icon}</div>
+                <h4 className="service-title">{data.headText}</h4>
+                <p className="service-description">{data.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="maximize-section">
+        <div className="maximize-header">
+          <h2 className="section-title text-center">
+            Maximize efficiency with <br /> intelligent automation
+          </h2>
+          <p className="section-subtitle text-center">
+            AMBISPINE TECHNOLOGIES invites you to join our vibrant digital
+            community platform
+          </p>
+        </div>
+
+        <div className="maximize-content">
+          <div className="maximize-img-container">
+            <img
+              src={officediscussingImg}
+              className="maximize-img"
+              alt="Office Discussion"
+            />
+          </div>
+          <div className="maximize-text-content">
+            <h2 className="section-title">
+              Elevate Your Business with Cloud Expertise
+            </h2>
+            <p className="section-description">
+              AMBISPINE TECHNOLOGIES invites you to join our vibrant digital
+              community platform, where you can connect, collaborate, and foster
+              creativity and innovation. Join us to unlock endless possibilities
+              and experience the magic of limitless potential!
+            </p>
+            <Link to="/product" className="learn-more-link">
+              Learn More <FaLongArrowAltRight className="arrow-icon" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

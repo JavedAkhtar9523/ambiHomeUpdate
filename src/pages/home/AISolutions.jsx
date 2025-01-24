@@ -30,7 +30,7 @@ const CloudCard = ({ title, description, backgroundImage }) => (
       <div className="glow-overlay"></div>
       <div className="content-wrapper">
         <h3>{title}</h3>
-        <p style={{ color: "gray" }}>{description}</p>
+        <p style={{ color: "#BCCCDC", textAlign: "start" }}>{description}</p>
         <button className="expand-button">
           <span>Expand</span>
           <svg

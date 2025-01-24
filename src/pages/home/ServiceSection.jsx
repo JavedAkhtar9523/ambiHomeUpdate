@@ -80,8 +80,8 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="services-section">
-      <div className="services-header">
+    <div className="services-section-ca">
+      <div className="services-header-ca">
         <h1>Our Services</h1>
         <p>
           Power your edge-to-cloud platform with proven, transformative, and

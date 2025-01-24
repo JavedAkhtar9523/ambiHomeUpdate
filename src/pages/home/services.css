@@ -1,11 +1,11 @@
 /* services.css */
-.services-section {
+.services-section-ca {
     background-color: #0a0a1a;
     padding: 4rem 2rem;
     min-height: 100vh;
   }
   
-  .services-header {
+  .services-header-ca {
     max-width: 800px;
     margin-left: 30px;
     margin-bottom: 40px;
@@ -13,7 +13,7 @@
     color: #ffffff;
   }
   
-  .services-header h1 {
+  .services-header-ca h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #fff, #a8b2ff);
@@ -21,7 +21,7 @@
     -webkit-text-fill-color: transparent;
   }
   
-  .services-header p {
+  .services-header-ca p {
     font-size: 1.1rem;
     color: #a8b2ff;
     line-height: 1.6;
@@ -190,11 +190,11 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .services-section {
+    .services-section-ca {
       padding: 2rem 1rem;
     }
   
-    .services-header h1 {
+    .services-header-ca h1 {
       font-size: 2.5rem;
     }
   
@@ -207,7 +207,7 @@
     .service-card{
       width: 99%;
     }
-    .services-section{
+    .services-section-ca{
       width: 145%;
     }
   }
