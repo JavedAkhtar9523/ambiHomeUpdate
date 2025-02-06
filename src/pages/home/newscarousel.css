@@ -85,7 +85,7 @@
 
 
 
-   .carousel-container {
+   .carousel-container-home-news {
     width: 100%;
     min-height: 600px;
     background-color: #1a1a1a;
@@ -95,7 +95,7 @@
     font-family: system-ui, -apple-system, sans-serif;
   }
 
-  .carousel-title {
+  .carousel-title-home-news {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -132,18 +132,18 @@
     color: white;
   }
 
-  .carousel-wrapper {
+  .carousel-wrapper-home-news {
     position: relative;
     overflow: hidden;
   }
 
-  .card-container {
+  .card-container-home-news {
     display: flex;
     gap: 1.5rem;
     transition: transform 0.5s ease-out;
   }
 
-  .card {
+  .card-home-news {
     flex-shrink: 0;
     width: 320px;
     background-color: #2a2a2a;
@@ -153,32 +153,32 @@
     transition: transform 0.3s ease;
   }
 
-  .card:hover {
+  .card-home-news:hover {
     transform: scale(1.05);
   }
 
-  .card-image {
+  .card-image-home-news {
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
   
-  .card-content {
+  .card-content-home-news {
     padding: 1.5rem;
   }
 
-  .card-title {
+  .card-title-home-news {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
   }
 
-  .card-description {
+  .card-description-home-news {
     font-size: 0.875rem;
     color: #a3a3a3;
   }
 
-  .navigation-buttons {
+  .navigation-buttons-home-news {
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
@@ -210,7 +210,7 @@
 
 
   @media (max-width: 768px) {
-    .carousel-container{
+    .carousel-container-home-news{
       width: 146%;
     }
   }

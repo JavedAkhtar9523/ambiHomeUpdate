@@ -36,7 +36,7 @@
     margin: 0 auto;
   }
   
-  .service-card {
+  .service-card-home-pg {
     position: relative;
     background: linear-gradient(145deg, #12123e, #0a0a2e);
     border-radius: 20px;
@@ -47,7 +47,7 @@
     
   }
   
-  .card-content {
+  .card-content-home-pg {
     position: relative;
     z-index: 2;
   }
@@ -63,11 +63,11 @@
     transition: opacity 0.3s ease;
   }
   
-  .service-card:hover {
+  .service-card-home-pg:hover {
     transform: translateY(-5px);
   }
   
-  .service-card:hover .card-glow {
+  .service-card-home-pg:hover .card-glow {
     opacity: 1;
   }
   
@@ -98,22 +98,22 @@
     transition: opacity 0.3s ease;
   }
   
-  .service-card:hover .service-image img {
+  .service-card-home-pg:hover .service-image img {
     transform: scale(1.05);
   }
   
-  .service-card:hover .image-overlay {
+  .service-card-home-pg:hover .image-overlay {
     opacity: 1;
   }
   
-  .service-card h3 {
+  .service-card-home-pg h3 {
     color: #ffffff;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     position: relative;
   }
   
-  .service-card h3::after {
+  .service-card-home-pg h3::after {
     content: '';
     position: absolute;
     bottom: -0.5rem;
@@ -124,18 +124,18 @@
     transition: width 0.3s ease;
   }
   
-  .service-card:hover h3::after {
+  .service-card-home-pg:hover h3::after {
     width: 60px;
   }
   
-  .service-card p {
+  .service-card-home-pg p {
     color: #b8b8ff;
     line-height: 1.6;
     margin-bottom: 2rem;
     font-size: 0.95rem;
   }
   
-  .explore-button {
+  .explore-button-home-pg {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -147,10 +147,11 @@
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 8px;
+    width: 100%;
     
   }
   
-  .explore-button:hover {
+  .explore-button-home-pg:hover {
     /* color: #6666ff; */
     transform: translateX(5px);
     color: white;
@@ -161,7 +162,7 @@
     transition: transform 0.3s ease;
   }
   
-  .explore-button:hover .arrow-icon {
+  .explore-button-home-pg:hover .arrow-icon {
     transform: translateX(3px);
   }
   
@@ -177,7 +178,7 @@
     }
   }
   
-  .service-card {
+  .service-card-home-pg {
     animation: cardAppear 0.5s ease forwards;
   }
   
@@ -204,7 +205,7 @@
   }
 
   @media (max-width: 480px) {
-    .service-card{
+    .service-card-home-pg{
       width: 99%;
     }
     .services-section-ca{

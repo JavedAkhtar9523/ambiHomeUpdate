@@ -5,11 +5,10 @@ import image1 from "../../assets/Pngtree.jpg";
 import DevelopersTools from "../card/DevelopersTools";
 import { FaRegEdit } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
-import QuotationForm from '../form/QuotationForm';
+import QuotationForm from "../form/QuotationForm";
 import FaqSection from "../card/FaqsSection";
 import CallToAction from "../card/CallToAction";
 const WebDevelopment = () => {
- 
   const faqs = [
     {
       question: "CMS or SaaS Development?",
@@ -110,16 +109,14 @@ const WebDevelopment = () => {
           </div>
         </div>
       </section>
-     
-     < FaqSection faqs={faqs}/>
-     
+
+      <FaqSection faqs={faqs} />
 
       <section>
         <DevelopersTools />
       </section>
 
-      <CallToAction/>
-     
+      <CallToAction />
     </>
   );
 };

@@ -57,32 +57,38 @@ const NewsCarousel = () => {
     product: [
       {
         title: "Product Feature 1",
-        description: "Innovative solutions for modern enterprises.",
+        description:
+          "Innovative solutions for modern enterprises.Transform your business with cutting-edge digital solutions.",
         image: carouselHome3,
       },
       {
         title: "Product Feature 2",
-        description: "Streamlined productivity and performance.",
+        description:
+          "Streamlined productivity and performance.Transform your business with cutting-edge digital solutions.",
         image: carouselHome2,
       },
       {
         title: "Product Feature 3",
-        description: "Enhanced security and reliability.",
+        description:
+          "Enhanced security and reliability.Transform your business with cutting-edge digital solutions.",
         image: carouselHome3,
       },
       {
         title: "Product Feature 4",
-        description: "Seamless integration capabilities.",
+        description:
+          "Seamless integration capabilities.Transform your business with cutting-edge digital solutions.",
         image: carouselHome4,
       },
       {
         title: "Product Feature 5",
-        description: "Advanced analytics and reporting.",
+        description:
+          "Advanced analytics and reporting.Transform your business with cutting-edge digital solutions.",
         image: carouselHome1,
       },
       {
         title: "Product Feature 6",
-        description: "Customizable workflow solutions.",
+        description:
+          "Customizable workflow solutions.Transform your business with cutting-edge digital solutions.",
         image: carouselHome2,
       },
     ],
@@ -90,8 +96,8 @@ const NewsCarousel = () => {
 
   const handleSlide = (direction) => {
     const container = containerRef.current;
-    const cards = container.getElementsByClassName("card");
-    const cardWidth = cards[0].offsetWidth + 24; // Including margin
+    const cards = container.getElementsByClassName("card-home-news");
+    const cardWidth = cards[0].offsetWidth + 24;
 
     if (direction === "left" && currentIndex > 0) {
       setCurrentIndex((prev) => prev - 1);
@@ -110,8 +116,8 @@ const NewsCarousel = () => {
   };
 
   return (
-    <div className="carousel-container">
-      <h1 className="carousel-title">News and Insights</h1>
+    <div className="carousel-container-home-news">
+      <h1 className="carousel-title-home-news">News and Insights</h1>
 
       <div className="tab-buttons">
         {["news", "product"].map((tab) => (
@@ -131,22 +137,26 @@ const NewsCarousel = () => {
         ))}
       </div>
 
-      <div className="carousel-wrapper">
-        <div ref={containerRef} className="card-container">
+      <div className="carousel-wrapper-home-news">
+        <div ref={containerRef} className="card-container-home-news">
           {data[activeTab].map((item, index) => (
-            <div key={index} className="card">
-              <img src={item.image} alt={item.title} className="card-image" />
-              <div className="card-content">
-                <h3 className="card-title" style={{ color: "white" }}>
+            <div key={index} className="card-home-news">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="card-image-home-news"
+              />
+              <div className="card-content-home-news">
+                <h3 className="card-title-home-news" style={{ color: "white" }}>
                   {item.title}
                 </h3>
-                <p className="card-description">{item.description}</p>
+                <p className="card-description-home-news">{item.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="navigation-buttons">
+        <div className="navigation-buttons-home-news">
           <button
             onClick={() => handleSlide("left")}
             disabled={currentIndex === 0}

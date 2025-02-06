@@ -69,6 +69,11 @@ import BusinessLanding from "./components/business/Business";
 import CRMComponent from "./components/business/CrmComponent";
 import ERPComponent from "./components/business/ErpComponent";
 import FooterWrapper from "./pages/footer/FooterWrapper";
+import NewsPage from "./pages/news/NewsPage";
+import FeatureDetail from "./components/newsportal/FeatureDetail";
+// import ExploreTechnologies from "./components/exploreTechnology/ExploreTechnologies";
+import CloudInfrastructure from "./components/cloudInfra/CloudInfrastructure";
+import EdgeComputing from "./components/edgeComputing/EdgeComputing";
 
 export const MyContext = createContext();
 
@@ -109,6 +114,11 @@ const PublicRoutes = () => (
     <Route path="/career" element={<Career />} />
     <Route path="/product" element={<ProductSpreads />} />
     <Route path="/platform" element={<Platform />} />
+    <Route path="/news" element={<NewsPage />} />
+    {/* <Route path="/exploretechnology" element={<ExploreTechnologies />} /> */}
+    <Route path="/cloudinfra" element={<CloudInfrastructure />} />
+    <Route path="/edgecomputing" element={<EdgeComputing />} />
+    <Route path="/feature/:id" element={<FeatureDetail />} />
     <Route path="/termsandprivacy" element={<TermsAndPrivacyPage />} />
 
     {/* Services Routes */}

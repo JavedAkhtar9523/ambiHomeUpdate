@@ -13,7 +13,7 @@
 }
 
 .modal-container {
-  background-color: white;
+  background-color: #2B2929;
   border-radius: 12px;
   padding: 24px;
   width: 90%;
@@ -32,11 +32,12 @@
   border: none;      
   cursor: pointer;    
   padding: 5px;       
-  z-index: 10;       
+  z-index: 10; 
+  color: #fff;      
 }
 
 .close-x-button:hover {
-  background-color: rgba(0, 0, 0, 0.1); 
+  background-color: rgba(230, 223, 223, 0.1); 
   border-radius: 50%;                   
 }
 
@@ -50,7 +51,7 @@
 }
 
 .modal-header h2 {
-  color: #333;
+  color: #fff;
   font-size: 24px;
   margin: 0;
  }
@@ -61,7 +62,7 @@
 }
 
 .form-step h3 {
-  color: #333;
+  color: #fff;
   margin-bottom: 16px;
   margin-left: 55px;
 }
@@ -82,7 +83,7 @@
   color: #999;
   pointer-events: none;
   transition: all 0.3s ease;
-  background-color: white;
+  /* background-color: #2B2929; */
   padding: 0 5px;
 }
 
@@ -191,7 +192,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #f0f0f0;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,7 +213,7 @@
 
 .step-label {
   font-size: 14px;
-  color: #666;
+  color: #fff;
 }
 
 .step-line {

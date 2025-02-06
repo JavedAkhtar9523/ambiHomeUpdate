@@ -48,28 +48,32 @@ const CareerWithUs = () => {
 
   return (
     <div>
-     <section ref={contentRef} className="career-features-section">
-  <h2 className="career-section-title">Why Career with Us</h2>
-  <div className="career-features-grid">
-    {contentItems.map((item, index) => (
-      <div
-        key={index}
-        className="career-feature-card animate-on-scroll"
-        aria-label={`Feature: ${item.heading}`}
-      >
-        <div className="c-container">
-          <div className="big-icons-circle-relative">
-            {item.icon}
-            <div className="small-num-circle-absolute">{item.num}</div>
-          </div>
+      <section ref={contentRef} className="career-features-section">
+        <h2 className="career-section-title">Why Career with Us</h2>
+        <p className="career-section-para">
+          We're shaping the future of freight and logistics. If you're excited
+          by the prospect of unlocking the world's potential by speeding up the
+          way goods move, join us
+        </p>
+        <div className="career-features-grid">
+          {contentItems.map((item, index) => (
+            <div
+              key={index}
+              className="career-feature-card animate-on-scroll"
+              aria-label={`Feature: ${item.heading}`}
+            >
+              <div className="c-container">
+                <div className="big-icons-circle-relative">
+                  {item.icon}
+                  <div className="small-num-circle-absolute">{item.num}</div>
+                </div>
+              </div>
+              <h3 className="career-feature-heading">{item.heading}</h3>
+              <p className="career-feature-description">{item.description}</p>
+            </div>
+          ))}
         </div>
-        <h3 className="career-feature-heading">{item.heading}</h3>
-        <p className="career-feature-description">{item.description}</p>
-      </div>
-    ))}
-  </div>
-</section>
-
+      </section>
     </div>
   );
 };

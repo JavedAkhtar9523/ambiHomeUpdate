@@ -62,7 +62,7 @@
 
 
   /* ai-solutions.css */
-.cloud-cards {
+.cloud-cards-home-page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -70,7 +70,7 @@
     padding: 1rem;
   }
   
-  .cloud-card {
+  .cloud-card-home-page {
     position: relative;
     min-height: 400px;
     border-radius: 16px;
@@ -80,12 +80,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .cloud-card:hover {
+  .cloud-card-home-page:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
   
-  .card-content {
+  .card-content-home-page {
     position: relative;
     height: 100%;
     padding: 2rem;
@@ -95,7 +95,7 @@
     z-index: 2;
   }
   
-  .glow-overlay {
+  .glow-overlay-home-page {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -110,16 +110,16 @@
     transition: opacity 0.3s ease;
   }
   
-  .cloud-card:hover .glow-overlay {
+  .cloud-card-home-page:hover .glow-overlay-home-page {
     opacity: 1;
   }
   
-  .content-wrapper {
+  .content-wrapper-home-page {
     position: relative;
     z-index: 3;
   }
   
-  .cloud-card h3 {
+  .cloud-card-home-page h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -128,7 +128,7 @@
     position: relative;
   }
   
-  .cloud-card h3::after {
+  .cloud-card-home-page h3::after {
     content: '';
     position: absolute;
     left: 0;
@@ -140,11 +140,11 @@
     transition: width 0.3s ease;
   }
   
-  .cloud-card:hover h3::after {
+  .cloud-card-home-page:hover h3::after {
     width: 80px;
   }
   
-  .cloud-card p {
+  .cloud-card-home-page p {
     color: #e6e6e6;
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -183,23 +183,23 @@
   }
   
   @media (max-width: 1200px) {
-    .cloud-cards {
+    .cloud-cards-home-page {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (max-width: 768px) {
-    .cloud-cards {
+    .cloud-cards-home-page {
       grid-template-columns: 1fr;
     }
     
-    .cloud-card {
+    .cloud-card-home-page {
       min-height: 350px;
     }
   }
 
   @media (max-width: 480px) {
-    .cloud-cards {
+    .cloud-cards-home-page {
       width: 145%;
     }
     
@@ -207,7 +207,7 @@
       min-height: 350px;
     } */
 
-    .solutions-section{
+    .solutions-section-home-page{
       width: 145%;
     }
   }
@@ -224,27 +224,27 @@
     }
   }
   
-  .cloud-card {
+  .cloud-card-home-page {
     animation: cardAppear 0.5s ease forwards;
   }
   
-  .cloud-cards > div:nth-child(2) {
+  .cloud-cards-home-page > div:nth-child(2) {
     animation-delay: 0.2s;
   }
   
-  .cloud-cards > div:nth-child(3) {
+  .cloud-cards-home-page > div:nth-child(3) {
     animation-delay: 0.4s;
   }
   
   /* Solutions Section */
-  .solutions-section {
+  .solutions-section-home-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
   }
   
-  .solutions-content h2 {
+  .solutions-content-home-page h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #ffffff;
@@ -304,22 +304,22 @@
   
   /* Responsive Design */
   @media (max-width: 1024px) {
-    .cloud-cards {
+    .cloud-cards-home-page {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (max-width: 768px) {
-    .cloud-cards {
+    .cloud-cards-home-page {
       grid-template-columns: 1fr;
     }
   
-    .solutions-section {
+    .solutions-section-home-page {
       grid-template-columns: 1fr;
       gap: 2rem;
     }
   
-    .solutions-content h2 {
+    .solutions-content-home-page h2 {
       font-size: 2rem;
     }
   }

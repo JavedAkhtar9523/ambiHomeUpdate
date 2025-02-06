@@ -21,14 +21,14 @@ import AiHome4 from "../../assets/cloud22 (2).jpg";
 
 const CloudCard = ({ title, description, backgroundImage }) => (
   <div
-    className="cloud-card"
+    className="cloud-card-home-page"
     style={{
       backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url(${backgroundImage})`,
     }}
   >
-    <div className="card-content">
-      <div className="glow-overlay"></div>
-      <div className="content-wrapper">
+    <div className="card-content-home-page">
+      <div className="glow-overlay-home-page"></div>
+      <div className="content-wrapper-home-page">
         <h3>{title}</h3>
         <p style={{ color: "#BCCCDC", textAlign: "start" }}>{description}</p>
         <button className="expand-button">
@@ -125,16 +125,19 @@ const AISolutions = () => {
   ];
 
   return (
-    <div className="ai-solutions">
-      <div className="cloud-cards">
+    <div className="ai-solutions-home-page">
+      <div className="cloud-cards-home-page">
         {cloudCards.map((card, index) => (
           <CloudCard key={index} {...card} />
         ))}
       </div>
 
-      <div className="solutions-section" style={{ backgroundColor: "black" }}>
+      <div
+        className="solutions-section-home-page"
+        style={{ backgroundColor: "black" }}
+      >
         <div
-          className="solutions-content"
+          className="solutions-content-home-page"
           style={{ width: "400px", margin: "90px" }}
         >
           <h2>AI-Powered Solutions</h2>

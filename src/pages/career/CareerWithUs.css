@@ -1,15 +1,20 @@
 /* Career Features Section */
 .career-features-section {
   padding: 4rem 2rem;
-  background: #f9fafb;
+  background: #010101;
 }
 
 .career-section-title {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
-  color: #333;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.career-section-para{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 .career-features-grid {
@@ -21,7 +26,7 @@
 
 .career-feature-card {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   padding: 2rem;
   background: #fff;
   border-radius: 1rem;

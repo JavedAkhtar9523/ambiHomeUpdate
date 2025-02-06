@@ -2,10 +2,10 @@ body{
   background-color: #fff !important;
 }
 .career-container {
-  max-width: 1200px;
-  margin: 100px auto;
-  padding: 2rem;
-  color: #333;
+  /* max-width: 1200px; */
+  /* margin: 100px auto;
+  padding: 2rem; */
+  /* color: #333; */
   
 }
 
@@ -126,13 +126,14 @@ body{
 /* Positions Section */
 .positions-section {
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #101010;
+
 }
 
 .positions-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #333;
+  color: #fff;
   margin-bottom: 2rem;
 }
 
@@ -144,7 +145,7 @@ body{
 }
 
 .position-card {
-  background: #ffffff;
+  background: #181818;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 1.5rem;
@@ -159,13 +160,13 @@ body{
 
 .position-header h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 
 .position-header p {
   font-size: 1rem;
-  color: #555;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
@@ -175,7 +176,7 @@ body{
   gap: 0.5rem;
   margin: 1rem 0;
   font-size: 0.9rem;
-  color: #666;
+  color: #fff;
 }
 
 .position-details span {

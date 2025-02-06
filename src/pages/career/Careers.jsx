@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import CareerHero from "./careerHero";
 import CareerBenefits from "./CareerBenefit";
@@ -6,7 +5,10 @@ import CareerPositions from "./CareerPositions";
 import CareerForm from "./CareerForm";
 import "./Career.css";
 import JobDescriptions from "./JobDescriptions";
-import CareerWithUs from "./CareerWithUs"
+import CareerWithUs from "./CareerWithUs";
+import Benefits from "./Benefits";
+import ConsultNow from "../../components/ConsultNow/ConsultNow";
+import JobApplicationForm from "./JobApplicationForm";
 
 export default function Career() {
   const [showApplicationForm, setShowApplicationForm] = useState(false);
@@ -15,7 +17,7 @@ export default function Career() {
 
   const handleApply = (position) => {
     setSelectedPosition(position);
-    setShowJobDescription(true); 
+    setShowJobDescription(true);
   };
 
   const handleApplyFromDescription = () => {
@@ -26,7 +28,9 @@ export default function Career() {
   return (
     <div className="career-container">
       <CareerHero />
-      <CareerBenefits />
+      {/* <CareerBenefits /> */}
+      <Benefits />
+      <CareerWithUs />
       {!showJobDescription && <CareerPositions onApply={handleApply} />}
 
       {showJobDescription && (
@@ -49,7 +53,8 @@ export default function Career() {
       )}
 
       <div>
-        <CareerWithUs/>
+        <JobApplicationForm />
+        <ConsultNow />
       </div>
     </div>
   );

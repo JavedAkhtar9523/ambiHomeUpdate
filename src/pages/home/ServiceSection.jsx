@@ -1,4 +1,3 @@
-// ServiceSection.jsx
 import React from "react";
 import "./services.css";
 import serviceHome1 from "../../assets/cloud22 (8).jpg";
@@ -7,15 +6,15 @@ import serviceHome3 from "../../assets/cloud22 (6).jpg";
 import serviceHome4 from "../../assets/cloud22 (2).jpg";
 
 const ServiceCard = ({ title, description, image, actionText }) => (
-  <div className="service-card">
-    <div className="card-content">
+  <div className="service-card-home-pg">
+    <div className="card-content-home-pg">
       <div className="service-image">
         <img src={image} alt={title} />
         <div className="image-overlay"></div>
       </div>
       <h3>{title}</h3>
       <p>{description}</p>
-      <button className="explore-button">
+      <button className="explore-button-home-pg">
         <span>{actionText}</span>
         <svg className="arrow-icon" viewBox="0 0 24 24" width="20" height="20">
           <path

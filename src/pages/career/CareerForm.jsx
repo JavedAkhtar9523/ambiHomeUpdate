@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./CareerForm.css";
-import { toast } from 'react-toastify';
-import {createJobApplication} from "../../redux/slices/jobSlice"
+import { toast } from "react-toastify";
+import { createJobApplication } from "../../redux/slices/jobSlice";
 import { useDispatch } from "react-redux";
 import { X } from "lucide-react";
 const CareerForm = ({ position, onClose }) => {
@@ -84,7 +84,7 @@ const CareerForm = ({ position, onClose }) => {
       });
     }
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
@@ -97,11 +97,11 @@ const CareerForm = ({ position, onClose }) => {
       jobData.append("resume", formData.resume);
       jobData.append("skills", JSON.stringify(formData.skills));
       jobData.append("message", formData.message);
-  
+
       for (let [key, value] of jobData.entries()) {
-        console.log(`${key}:`, value); 
+        console.log(`${key}:`, value);
       }
-  
+
       dispatch(createJobApplication(jobData))
         .then((response) => {
           toast.success("Your application submitted..!");
@@ -112,9 +112,6 @@ const CareerForm = ({ position, onClose }) => {
         });
     }
   };
-  
-  
-  
 
   const renderFormGroup = (name, label, type = "text", required = true) => (
     <div className="form-group c-group">
@@ -165,13 +162,13 @@ const CareerForm = ({ position, onClose }) => {
         )}
       </div>
       <div className="form-group c-group">
-      <input
-    type="file"
-    id="resume"
-    accept=".pdf,.doc,.docx"
-    onChange={handleFileChange}
-  />
-  
+        <input
+          type="file"
+          id="resume"
+          accept=".pdf,.doc,.docx"
+          onChange={handleFileChange}
+        />
+
         <label htmlFor="resume">Resume</label>
         {errors.resume && <div className="error-message">{errors.resume}</div>}
       </div>
@@ -245,10 +242,12 @@ const CareerForm = ({ position, onClose }) => {
     <div className="modal-overlay">
       <div className="modal-container" ref={modalRef}>
         <button className="close-x-button" onClick={onClose}>
-        <X size={24} />
+          <X size={24} />
         </button>
         <div className="modal-header">
-          <h2 className="text-center">Apply for {position?.title || "Position"}</h2>
+          <h2 className="text-center">
+            Apply for {position?.title || "Position"}
+          </h2>
         </div>
         {renderStepIndicator()}
         <form onSubmit={handleSubmit}>
